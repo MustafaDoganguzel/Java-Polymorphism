@@ -21,18 +21,21 @@ public class Car {
     public String getName(){
         return name;
     }
-    public void startEngine(){
-        System.out.println("the car's engine is starting");
+    public String  startEngine(){
+
         System.out.println(getClass().getSimpleName());
+        return  "the car's engine is starting";
     }
 
-    public void accelerate(){
-        System.out.println("the car is accelerating");
+    public String  accelerate(){
         System.out.println(getClass().getSimpleName());
+        return "the car is accelerating";
+
     }
-    public void brake(){
-        System.out.println("the car is braking");
+    public String  brake(){
+
         System.out.println(getClass().getSimpleName());
+        return  "the car is braking";
     }
 
     @Override
